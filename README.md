@@ -3,6 +3,7 @@
 <img src="https://github.com/kepler155c/opus-wiki/blob/master/assets/images/opus.gif?raw=true" width="540" height="360">
 
 ## Features
+* Sending fake data to discovery
 * Multitasking OS - run programs in separate tabs
 * Telnet (wireless remote shell)
 * VNC (wireless screen sharing)
@@ -16,5 +17,5 @@
 
 ## Install
 ```
-pastebin run UzGHLbNC
+pastebin run 3sT6Z3n6
 ```
