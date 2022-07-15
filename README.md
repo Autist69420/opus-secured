@@ -1,4 +1,5 @@
 # Opus OS for computercraft
+This is a fork of Opus OS by kepler15cc, but i have removed discovery information such as uptime and the label.
 
 <img src="https://github.com/kepler155c/opus-wiki/blob/master/assets/images/opus.gif?raw=true" width="540" height="360">
 
