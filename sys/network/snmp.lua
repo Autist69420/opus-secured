@@ -136,8 +136,8 @@ local function sendInfo()
 
   if os.clock() - infoTimer >= 1 then -- don't flood
     infoTimer = os.clock()
-    info.label = os.getComputerLabel()
-    info.uptime = math.floor(os.clock())
+    info.label = "REDACTED"
+    info.uptime = -913
     if turtle then
       info.fuel = turtle.getFuelLevel()
       info.status = turtle.status
