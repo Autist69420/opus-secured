@@ -154,9 +154,9 @@ end
 local function sendInfo()
 	if os.clock() - infoTimer >= 1 then -- don't flood
 		infoTimer = os.clock()
-		info.label = os.getComputerLabel()
-		info.uptime = math.floor(os.clock())
-		info.group = network.getGroup()
+		info.label = "REDACTED"
+		info.uptime = -913
+		info.group = "REDACTED"
 		if turtle and turtle.getStatus then
 			info.fuel = turtle.getFuelLevel()
 			info.status = turtle.getStatus()
@@ -168,25 +168,7 @@ local function sendInfo()
 			info.status = device.neuralInterface.status
 			if not info.status and device.neuralInterface.getMetaOwner then
 				pcall(function()
-					local meta = device.neuralInterface.getMetaOwner()
-					local states = {
-						isWet = 'Swimming',
-						isElytraFlying = 'Flying',
-						isBurning = 'Burning',
-						isDead = 'Deceased',
-						isOnLadder = 'Climbing',
-						isRiding = 'Riding',
-						isSneaking = 'Sneaking',
-						isSprinting = 'Running',
-					}
-					for k,v in pairs(states) do
-						if meta[k] then
-							info.status = v
-							break
-						end
-					end
-					info.status = info.status or 'health: ' ..
-							math.floor(meta.health / meta.maxHealth * 100)
+					info.status = info.status or 'health: -913'
 				end)
 			end
 		end
